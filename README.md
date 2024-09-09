@@ -1,6 +1,6 @@
 # Bash Scripts Collection
 
-This repository contains a collection of bash scripts created to automate various repetitive tasks, driven by my laziness to perform them manually. All these scripts are now connected via a single script, `bash-utility.sh`, which provides an easy-to-use menu for selecting and running the scripts.
+This repository contains a collection of bash scripts created to automate various repetitive tasks, driven by my laziness to perform them manually. 
 
 ## List of Scripts
 
