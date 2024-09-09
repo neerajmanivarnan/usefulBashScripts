@@ -1,0 +1,46 @@
+#!/bin/bash
+
+if [[ $# -ne 1 ]] ; then 
+	echo "Please enter the name of the network to connect"
+	echo "<usage> connect \"home\""
+	exit 1
+
+
+
+elif [[ $1 == "home" || $1 == "Home" ]] ; then
+	nmcli radio wifi on
+	echo "Switching on the wifi.."
+	sleep 5
+	status=$(nmcli connection show | grep DARSHNAM2.4G | awk '{print $2}')
+
+	if [[ $status != DARSHNAM2.4G ]]; then
+		echo Network not found
+		exit 1
+	else
+		echo "Connecting to network ... "
+		nmcli connection up d34c8f5d-692d-46df-a05a-8e7a5ef52036
+		sleep 3
+		name=$(nmcli connection show --active | grep Auto | awk '{print $2}')
+
+		echo "Connected to home network $name"
+	fi
+
+
+elif [[ $1 == "whoami"  ]] ; then 
+	nmcli radio wifi on
+	echo "Switching on the wifi.."
+	sleep 5
+	status=$(nmcli connection show | grep whoami | awk '{print $2}')
+
+	if [[ $status != whoami ]]; then
+		echo Network not found
+		exit 1
+	else
+		echo "Connecting to network..."
+		nmcli connection up aec7ed0d-4169-4389-b551-af8c5352c258
+		sleep 3
+		name=$(nmcli connection show --active | grep Auto | awk '{print $2}')
+		echo "Connected to network $name"
+	fi
+fi
+

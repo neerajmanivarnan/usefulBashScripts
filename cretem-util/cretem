@@ -1,0 +1,42 @@
+#!/bin/bash
+
+if [[ $# -ne 2 ]] ; then
+	echo "usage : cretem <option> <filename>"
+	echo ""
+	echo access the man page using : man cretem 
+fi
+
+while getopts "j:p:c:" opt; do
+	case "$opt" in
+
+		j)echo "public class $OPTARG {
+				
+		public static void main(String args[]){
+	
+		}
+
+}" > $OPTARG.java && vi $OPTARG.java;;
+
+		p)echo "#include<iostream>
+
+
+using namespace std;
+
+int main(){
+
+
+	return 0;
+}
+
+			" > $OPTARG.cpp && vi $OPTARG.cpp;; 
+
+		c)echo "#include<stdio.h>
+
+int main(){
+
+
+	return 0;
+}" > "$OPTARG.c" && vi "$OPTARG.c" ;; 
+		\?)echo "Please refer manual page for the proper usage of cretem" ;; 
+	esac
+done

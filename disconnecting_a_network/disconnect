@@ -1,0 +1,11 @@
+#!/bin/bash
+
+id=$(nmcli connection show --active | grep Auto | awk '{print $3}')
+name=$(nmcli connection show --active | grep $id | awk '{print $2}')
+echo network $name found...
+
+echo disconnecting network $name 
+
+nmcli connection down $id
+
+ nmcli radio wifi off

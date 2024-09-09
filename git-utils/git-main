@@ -1,0 +1,21 @@
+#!/bin/bash
+
+msg=$1
+
+# Check if 'main' or 'master' branch exists in the local .git directory
+if [ -e ".git/refs/heads/main" ]; then
+    branch_name="main"
+elif [ -e ".git/refs/heads/master" ]; then
+    branch_name="master"
+else
+    echo "No 'main' or 'master' branch found!"
+    exit 1
+fi
+
+# Add, commit, and push to the correct branch
+git add .
+git commit -m "$msg"
+git push origin "$branch_name"
+
+echo "Changes pushed to $branch_name branch."
+
