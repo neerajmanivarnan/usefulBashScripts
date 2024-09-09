@@ -26,7 +26,12 @@ To save time, add these scripts to your PATH so they can be accessed easily from
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/yourusername/usefulBashScripts.git
+   ```
+
+1. **Export the path:**
+   ```bash
    export PATH=$PATH:/path/to/usefulBashScripts
+   ```
 
 
 
