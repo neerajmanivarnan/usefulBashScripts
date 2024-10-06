@@ -13,10 +13,9 @@ This repository contains a collection of bash scripts created to automate variou
 3. **CRETEM Utility (`cretem-utility`)**  
    A utility script for creating templates for Java, C++, and C programs. This is highly useful for competitive coding.
 
-4. **Git Utils (`git-main` and `git-branch`)**  
-   A set of scripts that automate repetitive Git tasks like adding, committing, and pushing changes:
-   - **`git-main`** is used to add changes and push them directly from the main branch.
-   - **`git-branch`** is used to add changes from another branch and push them to the main branch.
+4. **Git Utils **  
+   Github utilities for people who don't know how to use git.
+  
 
 ## How to Use
 
