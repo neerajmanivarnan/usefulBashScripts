@@ -13,7 +13,7 @@ This repository contains a collection of bash scripts created to automate variou
 3. **CRETEM Utility (`cretem-utility`)**  
    A utility script for creating templates for Java, C++, and C programs. This is highly useful for competitive coding.
 
-4. **Git Utils **  
+4. **Git Utils**  
    Github utilities for people who don't know how to use git.
   
 
