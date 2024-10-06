@@ -1,0 +1,8 @@
+#!/bin/bash
+
+sleep 15
+if [[ ! -e ~/tobeDeleted/secure ]]; then 
+	poweroff
+else
+		echo Welcome.
+fi
