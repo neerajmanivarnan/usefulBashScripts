@@ -1,0 +1,24 @@
+#!/bin/bash
+
+current_directory=$(pwd)
+
+
+if [[ $# -ne 2 ]]; then
+  echo "Give the name of the files to swap"
+else
+  file1=$1
+  file2=$2
+
+  if [[ ! -e $file1 || ! -e $file2 ]]; then
+    echo "I dont think both files exist"
+  else
+    tmp=$(mktemp)
+
+# Swapping   the contents of the files using another temporary file
+    mv "$file1" "$tmp"
+    mv "$file2" "$file1"
+    mv "$tmp" "$file2"
+    echo "Swapped $file1 and $file2"
+  fi
+fi
+

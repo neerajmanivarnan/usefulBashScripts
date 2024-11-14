@@ -18,6 +18,8 @@ This repository contains a collection of bash scripts created to automate variou
    - **`git-main`** is used to add changes and push them directly from the main branch.
    - **`git-branch`** is used to add changes from another branch and push them to the main branch.
 
+5. **Swap**  
+   A command line utility to swap the name of two files.I found this useful during the configuration of my i3wm and neovim.This is specifically useful when you have to switch the names of two files back and forth repeatedly. 
 ## How to Use
 
 To save time, add these scripts to your PATH so they can be accessed easily from anywhere in your terminal.
