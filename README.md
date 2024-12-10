@@ -19,6 +19,10 @@ This repository contains a collection of bash scripts created to automate variou
 
 5. **Swap**  
    A command line utility to swap the name of two files.I found this useful during the configuration of my i3wm and neovim.This is specifically useful when you have to switch the names of two files back and forth repeatedly. 
+
+5. **Power-Consumption-Utility for i3wm**  
+Messed up default power consumption utility configuration for i3wm.Wrote my own bash script to solve it.
+
 ## How to Use
 
 To save time, add these scripts to your PATH so they can be accessed easily from anywhere in your terminal.
@@ -26,7 +30,7 @@ To save time, add these scripts to your PATH so they can be accessed easily from
 ### Steps:
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/usefulBashScripts.git
+   git clone https://github.com/neerajmanivarnan/usefulBashScripts.git
    ```
 
 1. **Export the path:**
