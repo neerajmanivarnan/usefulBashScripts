@@ -11,6 +11,7 @@ current_state=$(
 )
 
 if [[ "$current_state" = "charging" ]]; then
+  dunstctl close-all
   exit 0
 fi
 
