@@ -23,6 +23,12 @@ This repository contains a collection of bash scripts created to automate variou
 5. **Power-Consumption-Utility for i3wm**  
 Messed up default power consumption utility configuration for i3wm.Wrote my own bash script to solve it.
 
+6. **Finex**  
+Call me a noob, but I got tired of scrolling through a massive Java log file just to find the name of an exception. So, in like a minute, I whipped up a super simple script to parse the log and count how many times each exception pops up. 
+> Finex means `Find Exception`
+
+
+
 ## How to Use
 
 To save time, add these scripts to your PATH so they can be accessed easily from anywhere in your terminal.
